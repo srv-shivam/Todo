@@ -18,14 +18,17 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/todo_item"/>
+        tools:listitem="@layout/todo_item" />
 
     <EditText
         android:id="@+id/etTaskTodo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:fontFamily="sans-serif-medium"
         android:hint="Task Todo..."
+        android:paddingStart="4dp"
+        android:background="@drawable/border"
         android:minHeight="48dp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,6 +40,7 @@
         android:id="@+id/btnAdd"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
         android:text="Add"
         app:layout_constraintBottom_toBottomOf="@+id/etTaskTodo"
         app:layout_constraintEnd_toEndOf="parent"
